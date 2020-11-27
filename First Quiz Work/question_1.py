@@ -1,0 +1,5 @@
+int1 = int(input("What is the first integer?: "))
+int2 = int(input("What is the second integer?: "))
+floor_div_calc = (int1//int2)
+modulus_calc = (int1%int2)
+print(f"The quotient of {int1} and {int2} is {floor_div_calc} with a remainder of {modulus_calc}")
