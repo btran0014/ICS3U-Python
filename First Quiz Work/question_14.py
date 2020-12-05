@@ -3,5 +3,6 @@ def test_num(number):
         float(number)
         print('This is a valid number.')
     except:
-        print("Invalid number.")
+        print("This is an invalid number.")
 test_num(5)
+test_num("bonk")
