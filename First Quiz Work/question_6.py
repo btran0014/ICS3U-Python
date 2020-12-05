@@ -8,16 +8,12 @@ user_purchase=float(input("What is the total of your purchase?: "))
 if user_purchase<=0.0:
   print ("Invalid Price ")
 elif user_purchase>=100:
-  print ("You are eligible for 40% off in savings")
-  print (f"Here is your new total! {user_purchase - user_purchase*0.4} :)")
+  print (f"You are eligible for 40% off in savings\nHere is your new total! {user_purchase - user_purchase*0.4}")
 elif user_purchase>=75:
-  print ("You are eligible for 30% off in savings")
-  print (f"Here is your new total! {user_purchase - user_purchase*0.3} :)")
+  print (f"You are eligible for 30% off in savings\nHere is your new total! {user_purchase - user_purchase*0.3}")
 elif user_purchase>=50:
-  print ("You are eligible for 20% off in savings")
-  print (f"Here is your new total! {user_purchase - user_purchase*0.2} :)")
+  print (f"You are eligible for 20% off in savings\nHere is your new total! {user_purchase - user_purchase*0.2}")
 elif user_purchase>=25:
-  print ("You are eligible for 10% off in savings")
-  print (f"Here is your new total! {user_purchase - user_purchase*0.1} :)")
+  print (f"You are eligible for 10% off in savings\nHere is your new total! {user_purchase - user_purchase*0.1}")
 else:
-  print ("You are not eligible for savings :(")
+  print ("You are not eligible for savings")

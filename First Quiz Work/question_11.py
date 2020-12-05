@@ -4,4 +4,5 @@ def histogram(alist):
     for x in range(int(alist[i])):
       asterixes+="*"
     print (asterixes)
-histogram([5,9,7])
+histogram([4,9,7])
+histogram([7,3,9,2])

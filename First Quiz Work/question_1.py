@@ -1,5 +1,3 @@
-int1 = int(input("What is the first integer?: "))
-int2 = int(input("What is the second integer?: "))
-floor_div_calc = (int1//int2)
-modulus_calc = (int1%int2)
-print(f"The quotient of {int1} and {int2} is {floor_div_calc} with a remainder of {modulus_calc}")
+first_num = int(input("What is the first integer?: "))
+second_num = int(input("What is the second integer?: "))
+print(f"The quotient of {first_num} and {second_num} is {first_num//second_num} with a remainder of {first_num%second_num}")

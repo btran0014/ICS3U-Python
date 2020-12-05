@@ -1,6 +1,6 @@
 while True:
   user_inp=float(input("What is your mark?: "))
-  if  user_inp>=0 and  user_inp<=100:
+  if  100>=user_inp>=0:
     break
   else:
     print("Invalid Mark")

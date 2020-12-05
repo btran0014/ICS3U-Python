@@ -1,5 +1,5 @@
+import random
 while True:
-  import random;
   rand_int = int(random.randrange(1,7,1))
   new_roll =-1
   count = 0
