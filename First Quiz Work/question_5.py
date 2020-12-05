@@ -58,3 +58,4 @@ print ("Thank you and goodbye")
 a) the output does not change depending on the code version.
 b)Version 3 is the most efficient and easiest to understand. Version 2 checks for multiple conditions using AND comparisons whereas version 3 completes the same task using only
 one condition per if statement. Version 1 doesn't use elif statements but uses else and if seperately instead.
+"""
