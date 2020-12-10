@@ -32,23 +32,23 @@ while use_again == "Y":
 
   #linear equation calculations and prints table
   if eq_type == 1:
-    print("{:<5} x values:{:<10} y values:".format("",""))
+    print(f"{'':<5} X values:{'':<10} Y values:")
     for x in range (-4,5):
       y = (a_inp * x + c_inp)/-b_inp
       if abs(y) == 0:
         y = 0.0
       if x <0:
-        print ("{:6.1}".format(""), float(x),end="")
+        print (f"{'':6.1} {float(x)},end=''")
       else:
-        print ("{:7.1}".format(""), float(x),end="")
+        print (f"{'':7.1} {float(x)},end=''")
       #prevents the printing of -0.0
       if y <0:
-        print ("{:16.1}".format(""), y)
+        print (f"{'':16.1} {y}")
       else:
-        print ("{:17.1}".format(""), y)
+        print (f"{'':17.1} {y}")
   #quadratic equation calculations
   if eq_type ==2:
-    print("{:<5} x values:{:<10} y values:".format("",""))
+    print(f"{'':<5} x values:{'':<10} {y} values:")
     for x in range (-4,5):
       y = (a_inp*x**2 + b_inp*x + c_inp)
       print(y)
