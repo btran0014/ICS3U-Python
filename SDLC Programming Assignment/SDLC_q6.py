@@ -59,6 +59,23 @@ while use_again == "Y":
 
   if eq_type == 1:
     linear()
+    while True: 
+        use_again = input("Would you like to use this program again? (Y/N)")
+        if use_again == "Y":
+            break
+        elif use_again != "Y" and use_again != "N":
+            print("Please enter: Y or N.")
+        print("Thanks for using this program!")
+        break
   if eq_type ==2:
     quadratic()
-   
+
+    while True: 
+        use_again = input("Would you like to use this program again? (Y/N)")
+        if use_again == "Y":
+            break
+        elif use_again != "Y" and use_again != "N":
+            print("Please enter: Y or N.")
+        print("Thanks for using this program!")
+        break
+        
