@@ -1,6 +1,7 @@
 import random
 #creates variable that decides if the game will continue
 play_again = "Y"
+#initial game loop
 while play_again == "Y":
     #ask for gamemode type
     while True: 
@@ -14,7 +15,7 @@ while play_again == "Y":
             print("Invalid input! Please enter either a 1 or a 2.")
 
     count = 0
-        #default gamemode (1-100) if method is 1. Custom if 2. invalid if anything greater than 2.
+    #default gamemode (1-100) if method is 1. Custom if 2. invalid if anything greater than 2.
     if method == 1:
         min_val, max_val = 0, 100
     
@@ -46,6 +47,7 @@ while play_again == "Y":
                 print("Invalid input! Please enter an integer.")
         #keeps track of guesses
         count += 1
+        #outputs for guesses depending on the input
         if guess < min_val or guess > max_val:
             print (f" Invalid input! Enter a number within the range of values of {min_val} and {max_val}.")
         elif guess > rand_val:
