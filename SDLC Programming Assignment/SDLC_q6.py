@@ -13,7 +13,7 @@ def linear():
       if y <0:
         print (f"{round(y,1):19}")
       else:
-        print (f"{round(y,1):20}")
+        print (f"{round(y,1):19}")
 #quadratic calculations
 def quadratic():
     print(f"{'':5} x values:{'':10} Y values:")
