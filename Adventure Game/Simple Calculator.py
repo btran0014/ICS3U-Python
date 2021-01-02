@@ -1,9 +1,10 @@
-from tkinter import * 
+from tkinter import *
 
-root = Tk() 
+root = Tk()
+root.title("Simple Calculator")
 
-e = Entry(root, fg="green", bg="red")
-e.pack()
+e = Entry(root, width=35, borderwidth=5)
+e.grid(row=0, column=0)
 e.insert(0,"Enter Your Name In This Box")
 def myClick():
     name_is = "Your name is: " + e.get()
