@@ -5,6 +5,7 @@ root = Tk()
 e = Entry(root, fg="green", bg="red")
 e.pack()
 e.insert(0,"Enter Your Name In This Box")
+
 def myClick():
     name_is = "Your name is: " + e.get()
     myLabel = Label(root, text = name_is)
