@@ -15,7 +15,7 @@ def main_menu():
     pressed = pygame.mouse.get_pressed()
 
     #background image
-    menu_bg = pygame.image.load("Adventure Game/Images/menu_image.png")
+    menu_bg = pygame.image.load("Adventure Game/Images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -31,7 +31,7 @@ def main_menu():
         main.window = 3
         pygame.time.delay(100)
     elif 465 <=mouse[0] <=815 and 200 <= mouse[1] <=130:
-        pygame.draw.rect(screen, dark_grey, ((size[0]/2-175, 200, 350, 130))
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2-175, 200, 350, 130)))
         screen.blit(text2, (175, 35))
 
 
