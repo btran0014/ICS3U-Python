@@ -2,10 +2,9 @@ import pygame
 pygame.init()
 from startingmenu import main_menu
 
-
+#setup the window and the name
 pygame.display.set_caption("Solitude")
 clock = pygame.time.Clock()
-
 size = (1280,720)
 screen = pygame.display.set_mode(size)
 
@@ -15,9 +14,11 @@ black = (0, 0, 0)
 dark_grey = (48, 50, 54)
 cool_green = (19, 173, 130)
 
+#font sizes
 largefont = pygame.font.SysFont("Corbel", 75) 
 subtitlefont = pygame.font.SysFont("Corbel", 50)
 
+#main loop for the game
 rungame = True
 while rungame: 
     pygame.time.delay(10)
