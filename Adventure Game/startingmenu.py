@@ -1,16 +1,27 @@
 def main_menu():
-    from main import screen, pygame, light_grey, size, largefont, black, subtitlefont, cool_green, dark_grey
+    #import all of the necessary things to run the code
+    from main import screen, pygame, light_grey, size, largefont, black, smallfont, cool_green, dark_grey, white
     pygame.init()
 
-    #play button text
-    text1 = subtitlefont.render("PLAY", True, black)
-    text2 = subtitlefont.render("PLAY", True, cool_green )
+    #quits when prompted to
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
 
-    #title
+    #ALL OF THE TEXT FOR THE MENU
+    #play button text
+    text1 = smallfont.render("PLAY", True, black)
+    text2 = smallfont.render("PLAY", True, white )
     title_text = largefont.render("Solitude", True, black)
+    text3 = smallfont.render("QUIT", True, black)
+    text4 = smallfont.render("QUIT", True, white)
+    text5 = smallfont.render("INSTRUCTIONS", True, black)
+    text6 = smallfont.render("INSTRUCTIONS", True, white)
+
+    #print title to screen
     screen.blit(title_text, (size[0]/2 - 120, size[1]/2 - 270))
 
-    #hover and press
+    #hover and press with mouse
     mouse = pygame.mouse.get_pos()
     pressed = pygame.mouse.get_pressed()
 
@@ -20,19 +31,31 @@ def main_menu():
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
 
-    #print buttons onto screen
-    pygame.draw.rect(screen, light_grey, (size[0]/2-175, 200, 350, 130))
-    pygame.draw.rect(screen, light_grey, (size[0]/2-175, 350, 350, 130))
-    pygame.draw.rect(screen, light_grey, (size[0]/2-175, 500, 350, 130))
+
+    #pygame.draw.rect(screen, light_grey, ((size[0]/2 - 194, 150, 389, 114 )))
+
     
-    #play button
-    if 465 <=mouse[0] <=815 and 200 <= mouse[1] <=130 and pressed [0] == True:
-        #menuselectsound.play 
-        main.window = 3
-        pygame.time.delay(100)
-    elif 465 <=mouse[0] <=815 and 200 <= mouse[1] <=130:
-        pygame.draw.rect(screen, dark_grey, ((size[0]/2-175, 200, 350, 130)))
-        screen.blit(text2, (175, 35))
+    #Play Button
+    if 446 <= mouse[0] <= 835 and 150 <= mouse[1] <= 264 and pressed[0] == True:
+        pygame.quit()
+    elif 446 <=mouse[0] <= 835 and 150 <= mouse[1] <=264:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 194, 150, 389, 114 )))
+        screen.blit(text2, (575, 180))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2 - 194, 150, 389, 114)))
+        screen.blit(text1, (575, 180))
+   # pygame.draw.rect(screen, black ((size[0]/2) - 200, 144, 400, 125), 7, 10)
 
 
+ 
 
+    # Quit Button
+    if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        pygame.quit()
+    elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(text4, (575, 585))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(text3, (575, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 200, 555, 400, 125), 7, 10)
