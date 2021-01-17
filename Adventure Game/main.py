@@ -2,6 +2,7 @@ import pygame
 pygame.init()
 from startingmenu import main_menu
 
+
 #setup the window and the name
 pygame.display.set_caption("Solitude")
 clock = pygame.time.Clock()
@@ -29,4 +30,5 @@ while rungame:
             rungame = False
 
     main_menu()
+    
     pygame.display.update()

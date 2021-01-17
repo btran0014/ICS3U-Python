@@ -31,14 +31,10 @@ def main_menu():
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
 
-
-    
-
-    
-    #Play Button
-    if 446 <= mouse[0] <= 835 and 180 <= mouse[1] <= 264 and pressed[0] == True:
+    #play Button
+    if 446 <= mouse[0] <= 835 and 180 <= mouse[1] <= 294 and pressed[0] == True:
         pygame.quit()
-    elif 446 <=mouse[0] <= 835 and 170 <= mouse[1] <=264:
+    elif 446 <=mouse[0] <= 835 and 170 <= mouse[1] <=294:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 194, 180, 389, 114 )))
         screen.blit(text2, (575, 204))
     else:
@@ -46,9 +42,15 @@ def main_menu():
         screen.blit(text1, (575, 204))
    # pygame.draw.rect(screen, black ((size[0]/2) - 200, 144, 400, 125), 7, 10)
 
-    #instructions 
-    pygame.draw.rect(screen, light_grey, ((size[0]/2 - 194, 375, 389, 114 )))
- 
+    #instructions button
+    if 446 <= mouse[0] <= 835 and 375 <= mouse[1] <= 489 and pressed[0] == True:
+        pygame.quit()
+    elif 446 <=mouse[0] <= 835 and 375 <= mouse[1] <=489:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 194, 375, 389, 114 )))
+        screen.blit(text6, (485, 400))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2 - 194, 375, 389, 114 )))
+        screen.blit(text5, (485, 400))
 
     # Quit Button
     if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
