@@ -27,7 +27,7 @@ def main_menu():
     pressed = pygame.mouse.get_pressed()
 
     #background image
-    menu_bg = pygame.image.load("Adventure Game/Images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
