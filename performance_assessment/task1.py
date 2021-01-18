@@ -2,57 +2,53 @@
 This program is used to tally the votes for different presidential candidates, figure out the percentage of votes per 
 candidate and output who the winner is after the voting is finished
 """
+
+
 #Setting each vote value to 0
-minnie_votes = 0
-donald_votes = 0
-mickey_votes= 0
-goofy_votes = 0
+candidate_votes = [0,0,0,0]
 
 while True:
     #print all of the presidential candidates and their corresponding numbers then proceeds to ask for votes
     print ("The presidential candidates are: \n 1. Mickey Mouse \n 2. Donald Duck \n 3. Minnie Mouse \n 4. Goofy \n Type 0 to quit.")
-    vote=int(input("Vote?:"))
 
-    # tallies up the votes as they are being entered
-    if vote == 1:
-        mickey_votes += 1
-    
-    elif vote == 2:
-        donald_votes += 1
-    
-    elif vote == 3:
-        minnie_votes += 1
-
-    elif vote == 4:
-        goofy_votes += 1
-
-    elif vote == 0:
+    try:
+        vote=int(input("Vote?:"))     
+    except ValueError:
+        print("Please enter a number!")
         break
 
+    if vote == 0:
+        break
+    elif vote == 1 or vote == 2 or vote == 3 or vote == 4:
+        candidate_votes[vote -1] +=1 
     else:
         print ("invalid")
-        continue
+    
+    
 
-    #total votes
-    total_votes = mickey_votes + donald_votes + minnie_votes + goofy_votes
-    print (total_votes)
 
-#determines the winner and their percentage of the total votes
-if mickey_votes > donald_votes and mickey_votes > minnie_votes and mickey_votes > goofy_votes:
-    print("Mickey Mouse wins!")
-    print (mickey_votes/total_votes * 100,"% of the votes")
 
-elif donald_votes > minnie_votes and donald_votes > goofy_votes and donald_votes > mickey_votes:
-    print ("Donald Duck wins!")
-    print (donald_votes/total_votes * 100, "% of the votes")
+total = sum(candidate_votes)
+print(f"Here are the votes!{candidate_votes}")
 
-elif minnie_votes > goofy_votes and minnie_votes > mickey_votes and minnie_votes > donald_votes:
-    print("Minnie Mouse wins!")
-    print (minnie_votes/total_votes * 100, "% of the votes")
+percentage = [0,0,0,0]
 
-elif goofy_votes > mickey_votes and goofy_votes > minnie_votes and goofy_votes > donald_votes:
-    print("Goofy wins!")
-    print (goofy_votes/total_votes * 100, "% of the votes")
+for i in range(0,4):
+    percentage[i] = round(candidate_votes[i]/total*100)
+print (f"Here are the percentages of the votes!:{percentage}")
 
+candidate_votes_index = candidate_votes.index(max(candidate_votes))
+
+
+if candidate_votes_index == 0:
+    print(f"Mickey Mouse wins!")
+elif candidate_votes_index == 1:
+    print(f"Donald Duck wins!")
+elif candidate_votes_index == 2:
+    print(f"Minnie Mouse wins!")
+elif candidate_votes_index == 3:
+    print(f"Goofy wins!")
 else:
-    print("There was a tie!")
+    for i in range(0,4):
+        if max(candidate_votes) == candidate_votes[i]:
+            print("There was a tie!")
