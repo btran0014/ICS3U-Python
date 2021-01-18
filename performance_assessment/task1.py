@@ -3,7 +3,6 @@ This program is used to tally the votes for different presidential candidates, f
 candidate and output who the winner is after the voting is finished
 """
 
-
 #Setting each vote value to 0
 candidate_votes = [0,0,0,0]
 
@@ -24,10 +23,6 @@ while True:
     else:
         print ("invalid")
     
-    
-
-
-
 total = sum(candidate_votes)
 print(f"Here are the votes!{candidate_votes}")
 
