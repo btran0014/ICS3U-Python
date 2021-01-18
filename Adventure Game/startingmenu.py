@@ -34,7 +34,7 @@ def main_menu():
 
     #play Button
     if 446 <= mouse[0] <= 835 and 180 <= mouse[1] <= 294 and pressed[0] == True:
-        pygame.quit()
+        pygame.mixer.Sound.play(main.clicksound)
     elif 446 <=mouse[0] <= 835 and 170 <= mouse[1] <=294:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 194, 180, 389, 114 )))
         screen.blit(text2, (575, 204))
@@ -45,7 +45,7 @@ def main_menu():
 
     #instructions button
     if 446 <= mouse[0] <= 835 and 375 <= mouse[1] <= 489 and pressed[0] == True:
-        pygame.quit()
+        pygame.mixer.Sound.play(main.clicksound)
     elif 446 <=mouse[0] <= 835 and 375 <= mouse[1] <=489:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 194, 375, 389, 114 )))
         screen.blit(text6, (485, 400))
@@ -55,6 +55,7 @@ def main_menu():
 
     # Quit Button
     if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        pygame.mixer.Sound.play(main.clicksound)
         pygame.quit()
     elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))

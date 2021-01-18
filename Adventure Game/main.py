@@ -22,6 +22,8 @@ white = (255, 255, 255)
 largefont = pygame.font.SysFont("Corbel", 75) 
 smallfont = pygame.font.SysFont("Corbel", 50)
 
+clicksound = pygame.mixer.Sound("./Audio/click_sound.wav")
+
 #main loop for the game
 rungame = True
 while rungame: 
