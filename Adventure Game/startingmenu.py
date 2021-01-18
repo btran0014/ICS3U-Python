@@ -1,5 +1,6 @@
 def main_menu():
     #import all of the necessary things to run the code
+    import main
     from main import screen, pygame, light_grey, size, largefont, black, smallfont, cool_green, dark_grey, white
     pygame.init()
 
@@ -19,7 +20,7 @@ def main_menu():
     text6 = smallfont.render("INSTRUCTIONS", True, white)
 
     #print title to screen
-    screen.blit(title_text, (size[0]/2 - 120, size[1]/2 - 270))
+    screen.blit(title_text, (size[0]/2 - 194, size[1]/2 - 200))
 
     #hover and press with mouse
     mouse = pygame.mouse.get_pos()
@@ -61,4 +62,3 @@ def main_menu():
     else:
         pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
         screen.blit(text3, (575, 585))
- 

@@ -1,7 +1,9 @@
 import pygame
 pygame.init()
+import startingmenu
 from startingmenu import main_menu
-
+import gm1 
+from gm1 import scene1
 
 #setup the window and the name
 pygame.display.set_caption("Solitude")
@@ -30,5 +32,5 @@ while rungame:
             rungame = False
 
     main_menu()
-    
+
     pygame.display.update()
