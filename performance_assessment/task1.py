@@ -36,22 +36,28 @@ candidate_votes_index = candidate_votes.index(max(candidate_votes))
 
 #Figures out the winner or if there was a tie
 if candidate_votes_index == 0:
-    print(f"Mickey Mouse wins!")
     for i in range(0,4):
         if max(candidate_votes) == candidate_votes[i]:
             print("There was a tie!")
+        else:
+            print(f"Mickey Mouse wins!")
+
 elif candidate_votes_index == 1:
-    print(f"Donald Duck wins!")
     for i in range(0,4):
         if max(candidate_votes) == candidate_votes[i]:
             print("There was a tie!")
+    print(f"Donald Duck wins!",end="\r")
+    
 elif candidate_votes_index == 2:
-    print(f"Minnie Mouse wins!")
     for i in range(0,4):
         if max(candidate_votes) == candidate_votes[i]:
             print("There was a tie!")
+    print(f"Minnie Mouse wins!",end="\r")
+    
+
 elif candidate_votes_index == 3:
-    print(f"Goofy wins!")
     for i in range(0,4):
         if max(candidate_votes) == candidate_votes[i]:
             print("There was a tie!")
+    print(f"Goofy wins!",end="\r")
+
