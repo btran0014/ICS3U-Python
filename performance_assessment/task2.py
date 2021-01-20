@@ -1,7 +1,6 @@
 """ 
 This program will do a bunch of tasks after the user inputs a number
 """
-
 import collections
 #finds if the number is odd or even
 def odd_or_even():  

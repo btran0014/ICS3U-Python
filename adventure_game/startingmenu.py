@@ -3,7 +3,6 @@ def main_menu():
     import main
     from main import screen, pygame, light_grey, size, largefont, black, smallfont, cool_green, dark_grey, white
     pygame.init()
-    main.forestsound.play()
     #quits when prompted to
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -13,14 +12,15 @@ def main_menu():
     #play button text
     text1 = smallfont.render("PLAY", True, black)
     text2 = smallfont.render("PLAY", True, white )
-    title_text = largefont.render("Solitude", True, black)
+    #title text
+    title_text = largefont.render("SOLITUDE", True, black)
+    #quit button text
     text3 = smallfont.render("QUIT", True, black)
     text4 = smallfont.render("QUIT", True, white)
+    #instructions text
     text5 = smallfont.render("INSTRUCTIONS", True, black)
     text6 = smallfont.render("INSTRUCTIONS", True, white)
 
-    #print title to screen
-    screen.blit(title_text, (size[0]/2 - 194, size[1]/2 - 200))
 
     #hover and press with mouse
     mouse = pygame.mouse.get_pos()
@@ -31,6 +31,9 @@ def main_menu():
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
+
+    #print title to screen
+    screen.blit(title_text, (size[0]/2 - 165, size[1]/2 - 280))
 
     #play Button
     if 446 <= mouse[0] <= 835 and 180 <= mouse[1] <= 294 and pressed[0] == True:
