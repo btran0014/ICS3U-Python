@@ -1,8 +1,7 @@
 import pygame
-import startingmenu
-from startingmenu import main_menu
-import gm1 
+from startingmenu import main_menu 
 from gm1 import scene1
+from instructions import instructions_menu
 
 pygame.init()
 #setup the window and the name
@@ -21,10 +20,13 @@ white = (255, 255, 255)
 #font sizes
 largefont = pygame.font.SysFont("Corbel", 75) 
 smallfont = pygame.font.SysFont("Corbel", 50)
+smallestfont = pygame.font.SysFont("Corbel", 25)
 
 #defining a click sound
 clicksound = pygame.mixer.Sound("adventure_game/audio/click_sound.wav")
 forestsound = pygame.mixer.Sound("adventure_game/audio/forest_sounds.wav")
+
+window = 0
 
 #main loop for the game
 rungame = True
@@ -34,6 +36,16 @@ while rungame:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             rungame = False
-    main_menu()
+    #main menu
+    if window == 0:
+        main_menu()
+
+    # scene 1
+    #elif window == 1:
+        #scene1()
+    
+    #instructions menu
+    elif window == 2:
+        instructions_menu()
 
     pygame.display.update()
