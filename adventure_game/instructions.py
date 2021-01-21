@@ -22,11 +22,11 @@ def instructions_menu():
     itext4 = "Follow the path that you would, in real life! "
     itext5 = "Remember to have fun! "
     
-    instructions_text1 = smallestfont.render(itext1, True, dark_grey)
-    instructions_text2 = smallestfont.render(itext2, True, dark_grey)
-    instructions_text3 = smallestfont.render(itext3, True, dark_grey)
-    instructions_text4 = smallestfont.render(itext4, True, dark_grey)
-    instructions_text5 = smallestfont.render(itext5, True, dark_grey)
+    instructions_text1 = smallestfont.render(itext1, True, black)
+    instructions_text2 = smallestfont.render(itext2, True, black)
+    instructions_text3 = smallestfont.render(itext3, True, black)
+    instructions_text4 = smallestfont.render(itext4, True, black)
+    instructions_text5 = smallestfont.render(itext5, True, black)
     text1 = smallfont.render("BACK", True, black)
     text2 = smallfont.render("BACK", True, white)
 
@@ -37,11 +37,11 @@ def instructions_menu():
     screen.blit(menu_bg_scale,(0,0))
     
     #prints the instructions
-    screen.blit(instructions_text1, (size[0]/2-550, size[1]/2 - 280))
-    screen.blit(instructions_text2, (size[0]/2-550, size[1]/2 - 240))
-    screen.blit(instructions_text3, (size[0]/2-550, size[1]/2 - 200))
-    screen.blit(instructions_text4, (size[0]/2-550, size[1]/2 - 160))
-    screen.blit(instructions_text5, (size[0]/2-550, size[1]/2 - 120))
+    screen.blit(instructions_text1, (size[0]/2-520, size[1]/2 - 260))
+    screen.blit(instructions_text2, (size[0]/2-550, size[1]/2 - 220))
+    screen.blit(instructions_text3, (size[0]/2-560, size[1]/2 - 180))
+    screen.blit(instructions_text4, (size[0]/2-330, size[1]/2 - 140))
+    screen.blit(instructions_text5, (size[0]/2-200, size[1]/2 - 100))
 
     # Exit Button
     if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
