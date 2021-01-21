@@ -15,14 +15,20 @@ def instructions_menu():
     pressed = pygame.mouse.get_pressed()
 
     #text
-    instructions = """
-    Welcome to Solitude, a solo survival adventure. From the moment you enter the game,
-    From the moment you enter the game, all of your decisions will matter so make sure you
-    think about all of your choices. There are endings to this game. 
-    Follow the path that you would, in real life!
-    """
-    instructions_text = smallestfont.render(instructions, True, black)
+     
+    itext1 = "Welcome to Solitude, a solo survival adventure. From the moment "
+    itext2 =  "you enter the game, all of your decisions will matter so make sure you "
+    itext3 = "think about all of your choices. There are multiple endings to this game. "
+    itext4 = "Follow the path that you would, in real life! "
+    itext5 = "Remember to have fun! "
+    
+    instructions_text1 = smallestfont.render(itext1, True, dark_grey)
+    instructions_text2 = smallestfont.render(itext2, True, dark_grey)
+    instructions_text3 = smallestfont.render(itext3, True, dark_grey)
+    instructions_text4 = smallestfont.render(itext4, True, dark_grey)
+    instructions_text5 = smallestfont.render(itext5, True, dark_grey)
     text1 = smallfont.render("BACK", True, black)
+    text2 = smallfont.render("BACK", True, white)
 
     #background
     menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
@@ -31,7 +37,11 @@ def instructions_menu():
     screen.blit(menu_bg_scale,(0,0))
     
     #prints the instructions
-    screen.blit(instructions_text, (size[0]/8, size[1]/2 - 280))
+    screen.blit(instructions_text1, (size[0]/2-550, size[1]/2 - 280))
+    screen.blit(instructions_text2, (size[0]/2-550, size[1]/2 - 240))
+    screen.blit(instructions_text3, (size[0]/2-550, size[1]/2 - 200))
+    screen.blit(instructions_text4, (size[0]/2-550, size[1]/2 - 160))
+    screen.blit(instructions_text5, (size[0]/2-550, size[1]/2 - 120))
 
     # Exit Button
     if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
@@ -39,7 +49,7 @@ def instructions_menu():
         main.window = 0
     elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
-        screen.blit(text1, (575, 585))
+        screen.blit(text2, (575, 585))
     else:
         pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
         screen.blit(text1, (575, 585))
