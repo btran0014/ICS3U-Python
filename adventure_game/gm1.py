@@ -17,8 +17,9 @@ def scene1():
 
     #scene image on screen
     scene_image = pygame.image.load("adventure_game/images/plane_wreck.png")
-    scene_image = pygame.transform.scale(scene_image,(720,350))
-    screen.blit(scene_image,(285,25))
-
-    #print text box
-    pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+    scene_image = pygame.transform.scale(scene_image,(550,310))
+    screen.blit(scene_image,(15,15))
+   
+    #text box background
+    pygame.draw.rect(screen, dark_grey, ((size[0]/2) + 75, 15, 550, 310))
+    pygame.draw.rect(screen, black, ((size[0]/2) + 72, 9, 556, 319), 7, 11)
