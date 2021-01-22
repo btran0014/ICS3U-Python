@@ -38,7 +38,7 @@ def main_menu():
     #play Button
     if 446 <= mouse[0] <= 835 and 180 <= mouse[1] <= 294 and pressed[0] == True:
         main.clicksound.play()
-        #main.window = 1
+        main.window = 2
     elif 446 <=mouse[0] <= 835 and 170 <= mouse[1] <=294:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 194, 180, 389, 114 )))
         screen.blit(text2, (575, 204))
@@ -50,7 +50,7 @@ def main_menu():
     #instructions button
     if 446 <= mouse[0] <= 835 and 375 <= mouse[1] <= 489 and pressed[0] == True:
         main.clicksound.play()
-        main.window = 2
+        main.window = 1
     elif 446 <=mouse[0] <= 835 and 375 <= mouse[1] <=489:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 194, 375, 389, 114 )))
         screen.blit(text6, (485, 400))

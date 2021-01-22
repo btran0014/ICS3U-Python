@@ -39,13 +39,14 @@ while rungame:
     #main menu
     if window == 0:
         main_menu()
-
-    # scene 1
-    #elif window == 1:
-        #scene1()
     
     #instructions menu
-    elif window == 2:
+    elif window == 1:
         instructions_menu()
+    
+    # scene 1
+    elif window == 2:
+        scene1()
+
 
     pygame.display.update()
