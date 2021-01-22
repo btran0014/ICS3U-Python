@@ -53,3 +53,4 @@ def instructions_menu():
     else:
         pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
         screen.blit(text1, (575, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)

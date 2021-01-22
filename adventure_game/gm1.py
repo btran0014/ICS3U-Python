@@ -17,5 +17,8 @@ def scene1():
 
     #scene image on screen
     scene_image = pygame.image.load("adventure_game/images/plane_wreck.png")
-    menu_bg_scale = pygame.transform.scale(scene_image,(240,240))
-    screen.blit(scene_image,(0,0))
+    scene_image = pygame.transform.scale(scene_image,(720,350))
+    screen.blit(scene_image,(285,25))
+
+    #print text box
+    pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))

@@ -45,7 +45,7 @@ def main_menu():
     else:
         pygame.draw.rect(screen, light_grey, ((size[0]/2 - 194, 180, 389, 114)))
         screen.blit(text1, (575, 204))
-
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 174, 395, 123), 7, 11)
 
     #instructions button
     if 446 <= mouse[0] <= 835 and 375 <= mouse[1] <= 489 and pressed[0] == True:
@@ -57,6 +57,7 @@ def main_menu():
     else:
         pygame.draw.rect(screen, light_grey, ((size[0]/2 - 194, 375, 389, 114 )))
         screen.blit(text5, (485, 400))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 369, 395, 123), 7, 11)
 
     # Quit Button
     if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
@@ -68,3 +69,4 @@ def main_menu():
     else:
         pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
         screen.blit(text3, (575, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
