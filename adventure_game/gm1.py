@@ -23,3 +23,6 @@ def scene1():
     #text box background
     pygame.draw.rect(screen, dark_grey, ((size[0]/2) + 75, 15, 550, 310))
     pygame.draw.rect(screen, black, ((size[0]/2) + 72, 9, 556, 319), 7, 11)
+
+    #button 1
+    
