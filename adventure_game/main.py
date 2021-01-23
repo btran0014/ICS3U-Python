@@ -10,6 +10,11 @@ clock = pygame.time.Clock()
 size = (1280,720)
 screen = pygame.display.set_mode(size)
 
+#hover and press with mouse
+mouse = pygame.mouse.get_pos()
+pressed = pygame.mouse.get_pressed()
+
+
 #set colours as variables
 light_grey = (120, 122, 118)
 black = (0, 0, 0)
