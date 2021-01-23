@@ -1,4 +1,5 @@
 def scene1():
+    #importing important things
     import main
     from main import screen, pygame, light_grey, size, largefont, black, smallfont, cool_green, dark_grey, white, smallestfont
 
@@ -15,20 +16,27 @@ def scene1():
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
 
+    #text
     #text variables
     box1text = "l"
     box2text = "l"
     box3text = "l"
     box4text = "l"
-    #text
+    sceneboxtext = "l"
+    #text 1
     text1 = smallestfont.render(box1text,True, black)
     text2 = smallestfont.render(box1text,True, white)
+    #text 2
     text3 = smallestfont.render(box2text,True, black)
     text4 = smallestfont.render(box2text,True, white)
+    #text 3
     text5 = smallestfont.render(box3text,True, black)
     text6 = smallestfont.render(box3text,True, white)
+    #text 4
     text7 = smallestfont.render(box4text,True, black)
     text8 = smallestfont.render(box4text,True, white)
+    #scene text
+    scene_text = smallestfont.render(sceneboxtext, True, white)
 
     #scene image on screen
     scene_image = pygame.image.load("adventure_game/images/plane_wreck.png")
