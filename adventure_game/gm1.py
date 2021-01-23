@@ -82,7 +82,7 @@ def scene1():
     pygame.draw.rect(screen, black, ((size[0]/2) - 628, 529, 616, 149), 7, 11)
 
     #button 4
-    if (size[0]/2 + 15) <= mouse[0] <= ((size[0]/2 + 15)+610) and 380 <= mouse[1] <= 520 and pressed[0] == True:
+    if (size[0]/2 + 15) <= mouse[0] <= ((size[0]/2 + 15)+610) and 535 <= mouse[1] <= 675 and pressed[0] == True:
         main.clicksound.play()
         #main.window = 
     elif (size[0]/2 + 15) <= mouse[0] <= ((size[0]/2 + 15)+610) and 535 <= mouse[1] <= 675:
