@@ -45,6 +45,7 @@ def introduction_menu():
     # Continue Button
     if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
         main.clicksound.play()
+        pygame.time.delay(100)
         main.window = 3
     elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))

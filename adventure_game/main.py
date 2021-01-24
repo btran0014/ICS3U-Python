@@ -3,6 +3,7 @@ from startingmenu import main_menu
 from game_menu import scene1, scene2
 from instructions import instructions_menu
 from introduction import introduction_menu
+from deathmenu import death_menu
 
 pygame.init()
 #setup the window and the name
@@ -59,8 +60,25 @@ while rungame:
     elif window == 3:
         scene1()
 
+    #scene 2
     elif window == 4:
         scene2()
-
-
+   
+    elif window == 100:
+        death_menu()
     pygame.display.update()
+
+    '''
+    #scene 3
+    elif window == 5:
+        #scene3()
+
+    elif window == 6:
+        #scene4()
+    
+    elif window == 7:
+        #scene5()
+
+    elif window == 8:
+        #scene6()
+    '''
