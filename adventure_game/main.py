@@ -2,6 +2,7 @@ import pygame
 from startingmenu import main_menu 
 from gm1 import scene1
 from instructions import instructions_menu
+from introduction import introduction_menu
 
 pygame.init()
 #setup the window and the name
@@ -49,8 +50,12 @@ while rungame:
     elif window == 1:
         instructions_menu()
     
-    # scene 1
+    # introduction
     elif window == 2:
+        introduction_menu()
+    
+    # scene 1
+    elif window == 3:
         scene1()
 
 

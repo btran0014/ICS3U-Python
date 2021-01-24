@@ -18,11 +18,11 @@ def scene1():
 
     #text
     #text variables
-    box1text = "l"
-    box2text = "l"
-    box3text = "l"
-    box4text = "l"
-    sceneboxtext = "l"
+    box1text = "box 1"
+    box2text = "box 2"
+    box3text = "box 3"
+    box4text = "box 4"
+    sceneboxtext = "text box"
     #text 1
     text1 = smallestfont.render(box1text,True, black)
     text2 = smallestfont.render(box1text,True, white)
@@ -59,10 +59,10 @@ def scene1():
         #main.window = 
     elif (size[0]/2 - 625) <= mouse[0] <= ((size[0]/2 - 625)+610) and 380 <= mouse[1] <= 520:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 625, 380, 610, 140 )))
-        screen.blit(text2, (575, 204))
+        screen.blit(text2, (30, 400))
     else:
         pygame.draw.rect(screen, light_grey, ((size[0]/2 - 625, 380, 610, 140 )))
-        screen.blit(text1, (575, 204))
+        screen.blit(text1, (30, 400))
     pygame.draw.rect(screen, black, ((size[0]/2) - 628, 374, 616, 149), 7, 11)
 
     #button 2
@@ -71,10 +71,10 @@ def scene1():
         #main.window = 
     elif (size[0]/2 + 15) <= mouse[0] <= ((size[0]/2 + 15)+610) and 380 <= mouse[1] <= 520:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 + 15, 380, 610, 140 )))
-        screen.blit(text4, (575, 204))
+        screen.blit(text4, (670, 400))
     else:
         pygame.draw.rect(screen, light_grey, ((size[0]/2 + 15, 380, 610, 140 )))
-        screen.blit(text3, (575, 204))
+        screen.blit(text3, (670, 400))
     pygame.draw.rect(screen, black, ((size[0]/2) + 12, 374, 616, 149), 7, 11)
 
     #button 3
@@ -83,10 +83,10 @@ def scene1():
         #main.window = 
     elif (size[0]/2 - 625) <= mouse[0] <= ((size[0]/2 - 625)+610) and 535 <= mouse[1] <= 675:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 625, 535, 610, 140 )))
-        screen.blit(text6, (575, 204))
+        screen.blit(text6, (30, 550))
     else:
         pygame.draw.rect(screen, light_grey, ((size[0]/2 - 625, 535, 610, 140 )))
-        screen.blit(text5, (575, 204))
+        screen.blit(text5, (30, 550))
     pygame.draw.rect(screen, black, ((size[0]/2) - 628, 529, 616, 149), 7, 11)
 
     #button 4
@@ -95,8 +95,10 @@ def scene1():
         #main.window = 
     elif (size[0]/2 + 15) <= mouse[0] <= ((size[0]/2 + 15)+610) and 535 <= mouse[1] <= 675:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 + 15, 535, 610, 140 )))
-        screen.blit(text8, (575, 204))
+        screen.blit(text8, (670, 550))
     else:
         pygame.draw.rect(screen, light_grey, ((size[0]/2 + 15, 535, 610, 140 )))
-        screen.blit(text7, (575, 204))
+        screen.blit(text7, (670, 550))
     pygame.draw.rect(screen, black, ((size[0]/2) + 12, 529, 616, 149), 7, 11)
+
+    screen.blit(scene_text,(735, 30))
