@@ -1,6 +1,6 @@
 import pygame
 from startingmenu import main_menu 
-from game_menu import scene1, scene2
+from game_menu import scene1, scene2, scene3, scene4
 from instructions import instructions_menu
 from introduction import introduction_menu
 from deathmenu import death_menu
@@ -29,6 +29,7 @@ largefont = pygame.font.SysFont("Corbel", 75)
 smallfont = pygame.font.SysFont("Corbel", 50)
 smallestfont = pygame.font.SysFont("Corbel", 40)
 tinyfont = pygame.font.SysFont("Corbel", 30)
+tinierfont = pygame.font.SysFont("Corbel", 20)
 
 #defining a click sound
 clicksound = pygame.mixer.Sound("adventure_game/audio/click_sound.wav")
@@ -66,19 +67,20 @@ while rungame:
    
     elif window == 100:
         death_menu()
-    pygame.display.update()
+    
+    
+    elif window == 5:
+        scene3()
+    
+    
+    elif window == 6:
+        scene4()
 
     '''
-    #scene 3
-    elif window == 5:
-        #scene3()
-
-    elif window == 6:
-        #scene4()
-    
     elif window == 7:
         #scene5()
 
     elif window == 8:
         #scene6()
     '''
+    pygame.display.update()
