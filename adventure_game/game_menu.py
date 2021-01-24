@@ -578,7 +578,6 @@ def scene6():
     pygame.draw.rect(screen, black, ((size[0] - size[0] + 477), 26, 310, 209), 7, 11)
 
 def scene7():
-    #importing important things
     import main
     from main import screen, pygame, light_grey, size, largefont, black, smallfont, cool_green, dark_grey, white, smallestfont, tinyfont, tinierfont
 
