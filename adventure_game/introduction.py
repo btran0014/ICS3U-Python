@@ -21,11 +21,11 @@ def introduction_menu():
     itext4 = "pilot tells everyone to buckle up. You're going down fast! "
     itext5 = "Your last memory is the plane crash. You're all alone out here. "
     
-    instructions_text1 = smallestfont.render(itext1, True, white)
-    instructions_text2 = smallestfont.render(itext2, True, white)
-    instructions_text3 = smallestfont.render(itext3, True, white)
-    instructions_text4 = smallestfont.render(itext4, True, white)
-    instructions_text5 = smallestfont.render(itext5, True, white)
+    introduction_text1 = smallestfont.render(itext1, True, white)
+    introduction_text2 = smallestfont.render(itext2, True, white)
+    introduction_text3 = smallestfont.render(itext3, True, white)
+    introduction_text4 = smallestfont.render(itext4, True, white)
+    introduction_text5 = smallestfont.render(itext5, True, white)
     text1 = smallfont.render("CONTINUE", True, black)
     text2 = smallfont.render("CONTINUE", True, white)
 
@@ -35,12 +35,12 @@ def introduction_menu():
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
     
-    #prints the instructions
-    screen.blit(instructions_text1, (size[0]/2-345, size[1]/2 - 60))
-    screen.blit(instructions_text2, (size[0]/2-330, size[1]/2 - 20))
-    screen.blit(instructions_text3, (size[0]/2-365, size[1]/2 + 20))
-    screen.blit(instructions_text4, (size[0]/2-430, size[1]/2 + 60))
-    screen.blit(instructions_text5, (size[0]/2-430, size[1]/2 + 100))
+    #prints the introduction
+    screen.blit(introduction_text1, (size[0]/2-345, size[1]/2 - 60))
+    screen.blit(introduction_text2, (size[0]/2-330, size[1]/2 - 20))
+    screen.blit(introduction_text3, (size[0]/2-365, size[1]/2 + 20))
+    screen.blit(introduction_text4, (size[0]/2-430, size[1]/2 + 60))
+    screen.blit(introduction_text5, (size[0]/2-430, size[1]/2 + 100))
 
     # Continue Button
     if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:

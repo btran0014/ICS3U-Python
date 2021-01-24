@@ -1,6 +1,6 @@
 import pygame
 from startingmenu import main_menu 
-from gm1 import scene1
+from game_menu import scene1, scene2
 from instructions import instructions_menu
 from introduction import introduction_menu
 
@@ -27,6 +27,7 @@ white = (255, 255, 255)
 largefont = pygame.font.SysFont("Corbel", 75) 
 smallfont = pygame.font.SysFont("Corbel", 50)
 smallestfont = pygame.font.SysFont("Corbel", 40)
+tinyfont = pygame.font.SysFont("Corbel", 30)
 
 #defining a click sound
 clicksound = pygame.mixer.Sound("adventure_game/audio/click_sound.wav")
@@ -57,6 +58,9 @@ while rungame:
     # scene 1
     elif window == 3:
         scene1()
+
+    elif window == 4:
+        scene2()
 
 
     pygame.display.update()
