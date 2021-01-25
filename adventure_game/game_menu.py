@@ -781,5 +781,5 @@ def scene9():
     #scene image on screen
     scene_image = pygame.image.load("adventure_game/images/freezing.png")
     scene_image = pygame.transform.scale(scene_image,(170,170))
-    screen.blit(scene_image,(430,50))
-    pygame.draw.rect(screen, black, ((size[0] -size[0] + 427), 44, 176, 179), 7, 11) 
+    screen.blit(scene_image,(560,80))
+    pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 74, 176, 179), 7, 11) 
