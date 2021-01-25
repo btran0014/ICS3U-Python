@@ -501,7 +501,7 @@ def scene5():
     if (size[0]/2 - 625) <= mouse[0] <= ((size[0]/2 - 625)+610) and 380 <= mouse[1] <= 520 and pressed[0] == True:
         main.clicksound.play()
         pygame.time.delay(100)
-        #main.window = 8
+        main.window = 6
     elif (size[0]/2 - 625) <= mouse[0] <= ((size[0]/2 - 625)+610) and 380 <= mouse[1] <= 520:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 625, 380, 610, 140 )))
         screen.blit(text2, (30, 400))
@@ -526,7 +526,7 @@ def scene5():
     #screen.blit(scene_text,(735, 30))
     blit_text(screen, scenetext, (size[0]/2+84, 20), tinierfont, pygame.Color('white'))
 
-def scene6():
+def scene6(): #death
     import main
     from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
     import startingmenu
@@ -577,7 +577,7 @@ def scene6():
     screen.blit(scene_image,(500,50))
     pygame.draw.rect(screen, black, ((size[0] - size[0] + 477), 26, 310, 209), 7, 11)
 
-def scene7():
+def scene7(): #death
     import main
     from main import screen, pygame, light_grey, size, largefont, black, smallfont, cool_green, dark_grey, white, smallestfont, tinyfont, tinierfont
 
@@ -685,7 +685,7 @@ def scene7():
     #screen.blit(scene_text,(735, 30))
     blit_text(screen, scenetext, (size[0]/2+84, 20), tinierfont, pygame.Color('white'))
 
-def scene8(): #change the outcome of this button later!!!
+def scene8(): #win
     import main
     from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
     import startingmenu
@@ -735,7 +735,7 @@ def scene8(): #change the outcome of this button later!!!
     screen.blit(scene_image,(400,50))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 397), 44, 486, 249), 7, 11)
 
-def scene9():
+def scene9(): #death
     import main
     from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
     import startingmenu
@@ -783,3 +783,297 @@ def scene9():
     scene_image = pygame.transform.scale(scene_image,(170,170))
     screen.blit(scene_image,(560,80))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 74, 176, 179), 7, 11) 
+
+def scene10(): #death
+    import main
+    from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
+    import startingmenu
+    from startingmenu import main_menu
+
+    pygame.init()
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+    #hover and press with mouse
+    mouse = pygame.mouse.get_pos()
+    pressed = pygame.mouse.get_pressed()
+
+    #text
+    vfulltext = "You turn and make a break for the nearest ledge. You know that climbing onto it will get you out safely. The bear spots you. You ascend the wall but your hands can’t stop shaking in fear. You’re almost there, just a few more feet and you’ll make it. The bear gets on its hind legs and swipes with unbearable force with its arms. You collapse to the ground. The bear drags you deeper and deeper into its lair. You cry and cry for help but it’s hopeless."
+    btext1 = smallfont.render("CONTINUE", True, black)
+    btext2 = smallfont.render("CONTINUE", True, white)
+
+    #background
+    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    screen.blit(menu_bg, (0,0))
+    menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
+    screen.blit(menu_bg_scale,(0,0))
+
+
+    # Exit Button
+    if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        main.clicksound.play()
+        pygame.time.delay(100)
+        main.window = 100
+    elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext2, (525, 585))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext1, (525, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
+
+    blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
+
+    #scene image on screen
+    scene_image = pygame.image.load("adventure_game/images/bear_attack.png")
+    scene_image = pygame.transform.scale(scene_image,(170,170))
+    screen.blit(scene_image,(560,80))
+    pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 74, 176, 179), 7, 11) 
+
+def scene11(): #win
+    import main
+    from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
+    import startingmenu
+    from startingmenu import main_menu
+
+    pygame.init()
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+    #hover and press with mouse
+    mouse = pygame.mouse.get_pos()
+    pressed = pygame.mouse.get_pressed()
+
+    #text
+    vfulltext = "You remember from a documentary that the best way to survive a grizzly bear attack is to lie down on the ground with your hands protecting your neck. You collapse as quickly as possible to the ground, legs spread open as far as possible and arms over your nape. The bear spots you. It comes closer and closer until you can feel its breath on your face. It sniffs you. Curiously, it tries to roll you over. Your position doesn’t allow it to. Disappointed, the bear trudges in the other direction. You wait until its far out of your sight before you get up and quickly work towards the exit of the cave."
+    btext1 = smallfont.render("CONTINUE", True, black)
+    btext2 = smallfont.render("CONTINUE", True, white)
+
+    #background
+    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    screen.blit(menu_bg, (0,0))
+    menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
+    screen.blit(menu_bg_scale,(0,0))
+
+
+    # Continue Button
+    if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        main.clicksound.play()
+        pygame.time.delay(100)
+        main#.window = 100
+    elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext2, (525, 585))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext1, (525, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
+
+    blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
+
+   #scene image on screen
+    scene_image = pygame.image.load("adventure_game/images/bear_huddle.png")
+    scene_image = pygame.transform.scale(scene_image,(480,240))
+    screen.blit(scene_image,(400,45))
+    pygame.draw.rect(screen, black, (( 397), 39, 490, 250), 7, 11)
+
+def scene12(): death
+    import main
+    from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
+    import startingmenu
+    from startingmenu import main_menu
+
+    pygame.init()
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+    #hover and press with mouse
+    mouse = pygame.mouse.get_pos()
+    pressed = pygame.mouse.get_pressed()
+
+    #text
+    vfulltext = "You run away from the bear in a zigzag pattern. It's no use, it’s spotted you and it’s out for blood. You frantically make a break for it straight out the exit of the cave but you fail to spot the collection of rocks before you. You trip over the rocks as the bear slowly approaches you to take you deeper into its lair. You scream and cry but it's no use. You’re doomed. The bear drags you slowly across the cave floor as you come to terms with your now sealed fate."
+    btext1 = smallfont.render("CONTINUE", True, black)
+    btext2 = smallfont.render("CONTINUE", True, white)
+
+    #background
+    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    screen.blit(menu_bg, (0,0))
+    menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
+    screen.blit(menu_bg_scale,(0,0))
+
+
+    # Exit Button
+    if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        main.clicksound.play()
+        pygame.time.delay(100)
+        main.window = 100
+    elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext2, (525, 585))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext1, (525, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
+
+    blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
+
+    #scene image on screen
+    scene_image = pygame.image.load("adventure_game/images/bear_attack.png")
+    scene_image = pygame.transform.scale(scene_image,(170,170))
+    screen.blit(scene_image,(560,80))
+    pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 74, 176, 179), 7, 11) 
+
+def scene13(): #death
+     import main
+    from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
+    import startingmenu
+    from startingmenu import main_menu
+
+    pygame.init()
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+    #hover and press with mouse
+    mouse = pygame.mouse.get_pos()
+    pressed = pygame.mouse.get_pressed()
+
+    #text
+    vfulltext = "In a last ditch effort, you choose to stand your ground. You widen your stance and ball up your hands into fists as the bear spots you and begins to run at you. The bear lunges at you with immense force, taking you down to the ground. WIth one last effort you attempt to jab at its face with your fingers. The bear, now enraged by its prey bites and clamps down on your neck. You feel your body slow down and your consciousness slowly leave your body."
+    btext1 = smallfont.render("CONTINUE", True, black)
+    btext2 = smallfont.render("CONTINUE", True, white)
+
+    #background
+    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    screen.blit(menu_bg, (0,0))
+    menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
+    screen.blit(menu_bg_scale,(0,0))
+
+
+    # Exit Button
+    if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        main.clicksound.play()
+        pygame.time.delay(100)
+        main.window = 100
+    elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext2, (525, 585))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext1, (525, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
+
+    blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
+
+    #scene image on screen
+    scene_image = pygame.image.load("adventure_game/images/bear_attack.png")
+    scene_image = pygame.transform.scale(scene_image,(170,170))
+    screen.blit(scene_image,(560,80))
+    pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 74, 176, 179), 7, 11) 
+
+def scene14(): #win
+    import main
+    from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
+    import startingmenu
+    from startingmenu import main_menu
+
+    pygame.init()
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+    #hover and press with mouse
+    mouse = pygame.mouse.get_pos()
+    pressed = pygame.mouse.get_pressed()
+
+    #text
+    vfulltext = "Stumbling out of the mountaintops, you notice a faint red light down the mountain. This is your only ray of hope. Civilization must be near. You make your way down the mountain but you collapse due to exhaustion. You wake up once again to the sound of talking and mumbling. It’s warm. You hear the sound of a fire crackling. You must be safe. You did it. You made it out from seemingly impossible conditions. You survived the cold harsh winter."
+    btext1 = smallfont.render("CONTINUE", True, black)
+    btext2 = smallfont.render("CONTINUE", True, white)
+
+    #background
+    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    screen.blit(menu_bg, (0,0))
+    menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
+    screen.blit(menu_bg_scale,(0,0))
+
+
+    # Continue Button
+    if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        main.clicksound.play()
+        pygame.time.delay(100)
+        #main.window = 100
+    elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext2, (525, 585))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext1, (525, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
+
+    blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
+
+   #scene image on screen
+    scene_image = pygame.image.load("adventure_game/images/fireplace.png")
+    scene_image = pygame.transform.scale(scene_image,(480,240))
+    screen.blit(scene_image,(400,45))
+    pygame.draw.rect(screen, black, (( 397), 39, 490, 250), 7, 11)
+
+def scene15(): #death
+    import main
+    from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
+    import startingmenu
+    from startingmenu import main_menu
+
+    pygame.init()
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+    #hover and press with mouse
+    mouse = pygame.mouse.get_pos()
+    pressed = pygame.mouse.get_pressed()
+
+    #text
+    vfulltext = "You fall asleep and slowly drift away from consciousness. You feel at ease and safe. It’s warm where you are. Your life then begins to flash before your eyes. Everything that you’ve known. Everything that you’ve experienced is being played before your very eyes. You realize that it’s too late. You’ve done everything you could have. You slowly drift into the spirit realm as you your body lies in the plane seat, still dripping blood from the wounds you failed to notice from the plane crash."
+    btext1 = smallfont.render("CONTINUE", True, black)
+    btext2 = smallfont.render("CONTINUE", True, white)
+
+    #background
+    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    screen.blit(menu_bg, (0,0))
+    menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
+    screen.blit(menu_bg_scale,(0,0))
+
+
+    # Continue Button
+    if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        main.clicksound.play()
+        pygame.time.delay(100)
+        main.window = 100
+    elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext2, (525, 585))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext1, (525, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
+
+    blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
+
+   #scene image on screen
+    scene_image = pygame.image.load("adventure_game/images/seeing_the_light.png")
+    scene_image = pygame.transform.scale(scene_image,(480,240))
+    screen.blit(scene_image,(400,45))
+    pygame.draw.rect(screen, black, (( 397), 39, 490, 250), 7, 11)

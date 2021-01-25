@@ -1,6 +1,6 @@
 import pygame
 from startingmenu import main_menu 
-from game_menu import scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8, scene9
+from game_menu import scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8, scene9, scene10, scene11, scene12, scene13, scene14, scene15, scene16
 from instructions import instructions_menu
 from introduction import introduction_menu
 from deathmenu import death_menu
@@ -76,7 +76,6 @@ while rungame:
     elif window == 6:
         scene4()
 
-    
     elif window == 7:
         scene5()
     
@@ -92,5 +91,24 @@ while rungame:
     elif window == 11:
         scene9()
     
+    elif window == 12:
+        scene10()
     
+    elif window == 13:
+        scene11()
+
+    elif window == 14:
+        scene12()
+    
+    elif window == 15:
+        scene13()
+
+    elif window == 16:
+        scene14()#surviving
+    
+    elif window == 17:
+        scene15()#see the light
+    
+    elif window == 18:
+        scene16()#
     pygame.display.update()
