@@ -514,7 +514,7 @@ def scene5():
     if (size[0]/2 + 15) <= mouse[0] <= ((size[0]/2 + 15)+610) and 380 <= mouse[1] <= 520 and pressed[0] == True:
         main.clicksound.play()
         pygame.time.delay(100)
-        #main.window = 9
+        main.window = 17
     elif (size[0]/2 + 15) <= mouse[0] <= ((size[0]/2 + 15)+610) and 380 <= mouse[1] <= 520:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 + 15, 380, 610, 140 )))
         screen.blit(text4, (670, 400))
@@ -718,7 +718,7 @@ def scene8(): #win
     if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
         main.clicksound.play()
         pygame.time.delay(100)
-        main.window = 100
+        main.window = 16
     elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
         screen.blit(btext2, (525, 585))
@@ -865,7 +865,7 @@ def scene11(): #win
     if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
         main.clicksound.play()
         pygame.time.delay(100)
-        main#.window = 100
+        main.window = 16
     elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
         screen.blit(btext2, (525, 585))
@@ -882,7 +882,7 @@ def scene11(): #win
     screen.blit(scene_image,(400,45))
     pygame.draw.rect(screen, black, (( 397), 39, 490, 250), 7, 11)
 
-def scene12(): death
+def scene12(): #death
     import main
     from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
     import startingmenu
@@ -932,7 +932,7 @@ def scene12(): death
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 74, 176, 179), 7, 11) 
 
 def scene13(): #death
-     import main
+    import main
     from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
     import startingmenu
     from startingmenu import main_menu
@@ -1012,7 +1012,7 @@ def scene14(): #win
     if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
         main.clicksound.play()
         pygame.time.delay(100)
-        #main.window = 100
+        main.window = 18
     elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
         screen.blit(btext2, (525, 585))
@@ -1074,6 +1074,64 @@ def scene15(): #death
 
    #scene image on screen
     scene_image = pygame.image.load("adventure_game/images/seeing_the_light.png")
+    scene_image = pygame.transform.scale(scene_image,(480,240))
+    screen.blit(scene_image,(400,45))
+    pygame.draw.rect(screen, black, (( 397), 39, 490, 250), 7, 11)
+
+def scene16(): #win
+    import main 
+    from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont
+    import startingmenu
+    from startingmenu import main_menu
+
+    pygame.init()
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+    #hover and press with mouse
+    mouse = pygame.mouse.get_pos()
+    pressed = pygame.mouse.get_pressed()
+
+    #text
+    vtext1 = "CONGRATULATIONS "
+    vtext2 =  'YOU SURVIVED THE COLD, HARSH WILDERNESS '
+    vtext3 = "THANKS FOR PLAYING!"
+    
+    text1 = smallestfont.render(vtext1, True, white)
+    text2 = smallestfont.render(vtext2, True, white)
+    text3 = smallestfont.render(vtext3, True, white)
+    btext1 = smallfont.render("CONTINUE", True, black)
+    btext2 = smallfont.render("CONTINUE", True, white)
+
+    #background
+    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    screen.blit(menu_bg, (0,0))
+    menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
+    screen.blit(menu_bg_scale,(0,0))
+    
+    #prints the introduction
+    screen.blit(text1, (size[0]/2 - 180, size[1]/2 + 20))
+    screen.blit(text2, (size[0]/2 - 380, size[1]/2 + 60))
+    screen.blit(text3, (size[0]/2 - 200, size[1]/2 + 100))
+  
+
+    # Continue Button
+    if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        main.clicksound.play()
+        pygame.time.delay(100)
+        main.window = 0
+    elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext2, (525, 585))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext1, (525, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
+
+    #scene image on screen
+    scene_image = pygame.image.load("adventure_game/images/survival.png")
     scene_image = pygame.transform.scale(scene_image,(480,240))
     screen.blit(scene_image,(400,45))
     pygame.draw.rect(screen, black, (( 397), 39, 490, 250), 7, 11)
