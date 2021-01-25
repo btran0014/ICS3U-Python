@@ -91,4 +91,6 @@ while rungame:
 
     elif window == 11:
         scene9()
+    
+    
     pygame.display.update()
