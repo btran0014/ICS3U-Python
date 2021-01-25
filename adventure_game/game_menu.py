@@ -501,7 +501,7 @@ def scene5():
     if (size[0]/2 - 625) <= mouse[0] <= ((size[0]/2 - 625)+610) and 380 <= mouse[1] <= 520 and pressed[0] == True:
         main.clicksound.play()
         pygame.time.delay(100)
-        main.window = 8
+        #main.window = 8
     elif (size[0]/2 - 625) <= mouse[0] <= ((size[0]/2 - 625)+610) and 380 <= mouse[1] <= 520:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 - 625, 380, 610, 140 )))
         screen.blit(text2, (30, 400))
@@ -514,7 +514,7 @@ def scene5():
     if (size[0]/2 + 15) <= mouse[0] <= ((size[0]/2 + 15)+610) and 380 <= mouse[1] <= 520 and pressed[0] == True:
         main.clicksound.play()
         pygame.time.delay(100)
-        main.window = 9
+        #main.window = 9
     elif (size[0]/2 + 15) <= mouse[0] <= ((size[0]/2 + 15)+610) and 380 <= mouse[1] <= 520:
         pygame.draw.rect(screen, dark_grey, ((size[0]/2 + 15, 380, 610, 140 )))
         screen.blit(text4, (670, 400))
@@ -685,3 +685,101 @@ def scene7():
     #screen.blit(scene_text,(735, 30))
     blit_text(screen, scenetext, (size[0]/2+84, 20), tinierfont, pygame.Color('white'))
 
+def scene8(): #change the outcome of this button later!!!
+    import main
+    from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
+    import startingmenu
+    from startingmenu import main_menu
+
+    pygame.init()
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+    #hover and press with mouse
+    mouse = pygame.mouse.get_pos()
+    pressed = pygame.mouse.get_pressed()
+
+    #text
+
+    vfulltext = "You decide that the best way to fight the cold is to dig into the snow, and huddle under it. You slowly but surely dig a hole large enough to fit your body, keeping you warm until the following snow storm passes over. Now warm, you are ready to proceed on through the wilderness in an attempt to find civilization. "
+    btext1 = smallfont.render("CONTINUE", True, black)
+    btext2 = smallfont.render("CONTINUE", True, white)
+
+    #background
+    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    screen.blit(menu_bg, (0,0))
+    menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
+    screen.blit(menu_bg_scale,(0,0))
+
+
+    # Exit Button
+    if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        main.clicksound.play()
+        pygame.time.delay(100)
+        main.window = 100
+    elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext2, (525, 585))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext1, (525, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
+
+    blit_text(screen, vfulltext, (15,350),tinyfont, pygame.Color('white'))
+
+    #scene image on screen
+    scene_image = pygame.image.load("adventure_game/images/snow_shelter.jpg")
+    scene_image = pygame.transform.scale(scene_image,(480,240))
+    screen.blit(scene_image,(400,50))
+    pygame.draw.rect(screen, black, ((size[0] -size[0] + 397), 44, 486, 249), 7, 11)
+
+def scene9():
+    import main
+    from main import screen, pygame, light_grey, size, largefont, black, smallfont, dark_grey, white, smallestfont, tinyfont
+    import startingmenu
+    from startingmenu import main_menu
+
+    pygame.init()
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+    #hover and press with mouse
+    mouse = pygame.mouse.get_pos()
+    pressed = pygame.mouse.get_pressed()
+
+    #text
+    vfulltext = "You figure the best course of action at this point is to continue moving forward to find civilization while keeping your arms as close to your body as possible. You trudge through the snow, enduring the harsh winter storm that is brewing. You see a light. A faint light far off in the distance. Could it be? A sign of civilization? You press on forward, enduring the storm once more. You can no longer feel your toes. Your ears are frozen solid and numb. Your fingers are losing their sense of touch once again. You slow down to rub your hands but it's no use. Your fingers are frozen solid with their skin blackened by the winter frostbite. You collapse in the mountains, clinging on to your only hope of civilization. You black out due to hypothermia as your spirit leaves your body."
+    btext1 = smallfont.render("CONTINUE", True, black)
+    btext2 = smallfont.render("CONTINUE", True, white)
+
+    #background
+    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    screen.blit(menu_bg, (0,0))
+    menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
+    screen.blit(menu_bg_scale,(0,0))
+
+
+    # Exit Button
+    if 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675 and pressed[0] == True:
+        main.clicksound.play()
+        pygame.time.delay(100)
+        main.window = 100
+    elif 446 <= mouse[0] <= 835 and 561 <= mouse[1] <= 675:
+        pygame.draw.rect(screen, dark_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext2, (525, 585))
+    else:
+        pygame.draw.rect(screen, light_grey, ((size[0]/2) - 194, 561, 389, 114))
+        screen.blit(btext1, (525, 585))
+    pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
+
+    blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
+
+    #scene image on screen
+    scene_image = pygame.image.load("adventure_game/images/freezing.png")
+    scene_image = pygame.transform.scale(scene_image,(170,170))
+    screen.blit(scene_image,(430,50))
+    pygame.draw.rect(screen, black, ((size[0] -size[0] + 427), 44, 176, 179), 7, 11) 
