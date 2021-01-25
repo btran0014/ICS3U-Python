@@ -831,7 +831,7 @@ def scene10(): #death
     scene_image = pygame.image.load("adventure_game/images/bear_attack.png")
     scene_image = pygame.transform.scale(scene_image,(170,170))
     screen.blit(scene_image,(560,80))
-    pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 74, 176, 179), 7, 11) 
+    pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 78, 176, 179), 7, 11) 
 
 def scene11(): #win
     import main
@@ -929,7 +929,7 @@ def scene12(): #death
     scene_image = pygame.image.load("adventure_game/images/bear_attack.png")
     scene_image = pygame.transform.scale(scene_image,(170,170))
     screen.blit(scene_image,(560,80))
-    pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 74, 176, 179), 7, 11) 
+    pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 78, 176, 179), 7, 11) 
 
 def scene13(): #death
     import main
@@ -978,7 +978,7 @@ def scene13(): #death
     scene_image = pygame.image.load("adventure_game/images/bear_attack.png")
     scene_image = pygame.transform.scale(scene_image,(170,170))
     screen.blit(scene_image,(560,80))
-    pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 74, 176, 179), 7, 11) 
+    pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 78, 176, 179), 7, 11) 
 
 def scene14(): #win
     import main
