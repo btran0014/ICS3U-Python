@@ -23,7 +23,7 @@ def death_menu():
     text2 = smallfont.render("RESTART", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -45,6 +45,6 @@ def death_menu():
     pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/death.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/death.png")
     scene_image = pygame.transform.scale(scene_image,(360,280))
     screen.blit(scene_image,(460, 100))

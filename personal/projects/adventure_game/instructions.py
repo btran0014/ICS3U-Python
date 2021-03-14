@@ -31,7 +31,7 @@ def instructions_menu():
     text2 = smallfont.render("BACK", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))

@@ -30,7 +30,7 @@ def scene1():
             pygame.quit()
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -56,7 +56,7 @@ def scene1():
     text8 = tinyfont.render(box4text,True, white)
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/plane_wreck.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/plane_wreck.png")
     scene_image = pygame.transform.scale(scene_image,(550,310))
     screen.blit(scene_image,(15,15))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 12), 9, 556, 319), 7, 11)
@@ -138,7 +138,7 @@ def scene2():
             pygame.quit()
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -164,7 +164,7 @@ def scene2():
     text8 = tinyfont.render(box4text,True, white)
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/luggage.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/luggage.png")
     scene_image = pygame.transform.scale(scene_image,(550,310))
     screen.blit(scene_image,(15,15))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 12), 9, 556, 319), 7, 11)
@@ -246,7 +246,7 @@ def scene3():
             pygame.quit()
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -272,7 +272,7 @@ def scene3():
     text8 = tinyfont.render(box4text,True, white)
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/valley.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/valley.png")
     scene_image = pygame.transform.scale(scene_image,(550,310))
     screen.blit(scene_image,(15,15))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 12), 9, 556, 319), 7, 11)
@@ -354,7 +354,7 @@ def scene4():
             pygame.quit()
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -381,7 +381,7 @@ def scene4():
     text8 = tinyfont.render(box4text,True, white)
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/first_aid_kit.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/first_aid_kit.png")
     scene_image = pygame.transform.scale(scene_image,(360, 220))
     pygame.draw.rect(screen, light_grey, ((size[0] - size[0] + 15), 15, 546, 310))
     screen.blit(scene_image,(125,50))
@@ -464,7 +464,7 @@ def scene5():
             pygame.quit()
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -483,7 +483,7 @@ def scene5():
     text4 = tinyfont.render(box2text,True, white)
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/climb_plane.jpg")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/climb_plane.jpg")
     scene_image = pygame.transform.scale(scene_image,(550,310))
     screen.blit(scene_image,(15,15))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 12), 9, 556, 319), 7, 11)
@@ -549,7 +549,7 @@ def scene6(): #death
     btext2 = smallfont.render("CONTINUE", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -590,7 +590,7 @@ def scene7(): #death
             pygame.quit()
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -616,7 +616,7 @@ def scene7(): #death
     text8 = tinyfont.render(box4text,True, white)
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/cave.jpg")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/cave.jpg")
     scene_image = pygame.transform.scale(scene_image,(550,310))
     screen.blit(scene_image,(15,15))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 12), 9, 556, 319), 7, 11)
@@ -708,7 +708,7 @@ def scene8(): #win
     btext2 = smallfont.render("CONTINUE", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -730,7 +730,7 @@ def scene8(): #win
     blit_text(screen, vfulltext, (15,350),tinyfont, pygame.Color('white'))
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/snow_shelter.jpg")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/snow_shelter.jpg")
     scene_image = pygame.transform.scale(scene_image,(480,240))
     screen.blit(scene_image,(400,50))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 397), 44, 486, 249), 7, 11)
@@ -757,7 +757,7 @@ def scene9(): #death
     btext2 = smallfont.render("CONTINUE", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -779,7 +779,7 @@ def scene9(): #death
     blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/freezing.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/freezing.png")
     scene_image = pygame.transform.scale(scene_image,(170,170))
     screen.blit(scene_image,(560,80))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 74, 176, 179), 7, 11) 
@@ -806,7 +806,7 @@ def scene10(): #death
     btext2 = smallfont.render("CONTINUE", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -828,7 +828,7 @@ def scene10(): #death
     blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/bear_attack.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/bear_attack.png")
     scene_image = pygame.transform.scale(scene_image,(170,170))
     screen.blit(scene_image,(560,80))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 78, 176, 179), 7, 11) 
@@ -855,7 +855,7 @@ def scene11(): #win
     btext2 = smallfont.render("CONTINUE", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -877,7 +877,7 @@ def scene11(): #win
     blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
 
    #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/bear_huddle.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/bear_huddle.png")
     scene_image = pygame.transform.scale(scene_image,(480,240))
     screen.blit(scene_image,(400,45))
     pygame.draw.rect(screen, black, (( 397), 39, 490, 250), 7, 11)
@@ -904,7 +904,7 @@ def scene12(): #death
     btext2 = smallfont.render("CONTINUE", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -926,7 +926,7 @@ def scene12(): #death
     blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/bear_attack.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/bear_attack.png")
     scene_image = pygame.transform.scale(scene_image,(170,170))
     screen.blit(scene_image,(560,80))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 78, 176, 179), 7, 11) 
@@ -953,7 +953,7 @@ def scene13(): #death
     btext2 = smallfont.render("CONTINUE", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -975,7 +975,7 @@ def scene13(): #death
     blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/bear_attack.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/bear_attack.png")
     scene_image = pygame.transform.scale(scene_image,(170,170))
     screen.blit(scene_image,(560,80))
     pygame.draw.rect(screen, black, ((size[0] -size[0] + 557), 78, 176, 179), 7, 11) 
@@ -1002,7 +1002,7 @@ def scene14(): #win
     btext2 = smallfont.render("CONTINUE", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -1024,7 +1024,7 @@ def scene14(): #win
     blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
 
    #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/fireplace.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/fireplace.png")
     scene_image = pygame.transform.scale(scene_image,(480,240))
     screen.blit(scene_image,(400,45))
     pygame.draw.rect(screen, black, (( 397), 39, 490, 250), 7, 11)
@@ -1051,7 +1051,7 @@ def scene15(): #death
     btext2 = smallfont.render("CONTINUE", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -1073,7 +1073,7 @@ def scene15(): #death
     blit_text(screen, vfulltext, (15,300),tinyfont, pygame.Color('white'))
 
    #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/seeing_the_light.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/seeing_the_light.png")
     scene_image = pygame.transform.scale(scene_image,(480,240))
     screen.blit(scene_image,(400,45))
     pygame.draw.rect(screen, black, (( 397), 39, 490, 250), 7, 11)
@@ -1106,7 +1106,7 @@ def scene16(): #win
     btext2 = smallfont.render("CONTINUE", True, white)
 
     #background
-    menu_bg = pygame.image.load("adventure_game/images/purple_wallpaper.jpg")
+    menu_bg = pygame.image.load("personal/projects/adventure_game/images/purple_wallpaper.jpg")
     screen.blit(menu_bg, (0,0))
     menu_bg_scale = pygame.transform.scale(menu_bg,(1280,720))
     screen.blit(menu_bg_scale,(0,0))
@@ -1131,7 +1131,7 @@ def scene16(): #win
     pygame.draw.rect(screen, black, ((size[0]/2) - 197, 555, 395, 123), 7, 11)
 
     #scene image on screen
-    scene_image = pygame.image.load("adventure_game/images/survival.png")
+    scene_image = pygame.image.load("personal/projects/adventure_game/images/survival.png")
     scene_image = pygame.transform.scale(scene_image,(480,240))
     screen.blit(scene_image,(400,45))
     pygame.draw.rect(screen, black, (( 397), 39, 490, 250), 7, 11)
