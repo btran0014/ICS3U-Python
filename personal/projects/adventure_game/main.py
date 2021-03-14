@@ -33,6 +33,7 @@ tinierfont = pygame.font.SysFont("Corbel", 20)
 
 #defining a click sound
 clicksound = pygame.mixer.Sound("adventure_game/audio/click_sound.wav")
+forestsound = pygame.mixer.Sound("adventure_game/audio/forest_sounds.wav")
 
 window = 0
 
