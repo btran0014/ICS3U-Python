@@ -33,6 +33,7 @@ tinierfont = pygame.font.SysFont("Corbel", 20)
 
 #defining a click sound
 clicksound = pygame.mixer.Sound("adventure_game/audio/click_sound.wav")
+forestsound = pygame.mixer.Sound("adventure_game/audio/forest_sounds.wav")
 
 window = 0
 
@@ -63,14 +64,9 @@ while rungame:
     #scene 2
     elif window == 4:
         scene2()
-   
-    elif window == 100:
-        death_menu()
-    
-    
+      
     elif window == 5:
         scene3()
-    
     
     elif window == 6:
         scene4()
@@ -111,4 +107,10 @@ while rungame:
     elif window == 18:
         scene16()#
     
+    elif window == 100:
+        death_menu()
+        
     pygame.display.update()
+
+pygame.quit()
+quit()
